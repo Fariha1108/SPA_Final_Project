@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Login } from '.';
+import { LoginPage } from '.';
 import { Segment, Button } from 'semantic-ui-react';
 import './General.css';
 
@@ -13,7 +13,7 @@ export const FavHacks = ({ isLoggedIn }) => {
             <Segment placeholder>
                 {
                     !isLoggedIn ?
-                        <Login />
+                        <LoginPage />
                         :
                         <div>
                             <h3 className='description'>Hi, schön dass du wieder da bist.<br />Was möchtest du heute lernen oder erfahren?</h3>

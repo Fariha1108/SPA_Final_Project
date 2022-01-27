@@ -9,5 +9,8 @@ import { Card3 } from "./Cards/Card3";
 import { Card4 } from "./Cards/Card4";
 import { Card5 } from "./Cards/Card5";
 import { Card6 } from "./Cards/Card6";
+import { Card7 } from "./Cards/Card7";
+import { Card8 } from "./Cards/Card8";
+import { Login } from "./Login/Login";
 
-export { Header, SingUp, Loading, Card1, Card2, Card3, Card4, Card5, Card6 };
+export { Header, SingUp, Login, Loading, Card1, Card2, Card3, Card4, Card5, Card6, Card7, Card8 };
