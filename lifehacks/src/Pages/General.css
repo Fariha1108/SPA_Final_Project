@@ -1,0 +1,20 @@
+.description {
+    color: grey;
+}
+
+.topic {
+    color: plum;
+    font-weight: bold;
+}
+
+.Logo {
+    font-style: italic;
+    font-weight: bold;
+    color: teal;
+}
+
+.btnBox {
+    display: flex;
+    width: 30%;
+}
+

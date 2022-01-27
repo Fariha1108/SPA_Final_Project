@@ -1,15 +1,29 @@
-import React, { useContext } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Login } from '.';
+import { Segment, Button } from 'semantic-ui-react';
+import './General.css';
 
-import { PageContext } from '../PageContext';
+export const FavHacks = ({ isLoggedIn }) => {
 
-export const FavHacks = () => {
-
-    //const [isLoggedIn, setIsLoggedIn] = useContext(PageContext);
+    const navigate = useNavigate();
 
     return (
         <div>
-            your favorite life hacks
-
+            <Segment placeholder>
+                {
+                    !isLoggedIn ?
+                        <Login />
+                        :
+                        <div>
+                            <h3 className='description'>Hi, schön dass du wieder da bist.<br />Was möchtest du heute lernen oder erfahren?</h3>
+                            {/* zu Home funktioniert nicht */}
+                            <h3 className='description'>Gehe zum Home, um neue Life Hacks zu endecken.</h3>
+                            <br />
+                            <Button color='olive' onClick={() => navigate("/home")}>Home</Button>
+                        </div>
+                }
+            </Segment>
         </div>
     );
 };

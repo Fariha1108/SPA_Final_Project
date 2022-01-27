@@ -1,0 +1,61 @@
+.Form
+{
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 5px solid cyan;
+    border-radius: 5px;
+}
+
+h1
+{
+    color: cyan;
+    text-align: center;
+}
+
+.title
+{
+    color: grey;
+    font-weight: bold;
+}
+
+.input
+{
+    background-color: grey;
+    height: 25px;
+    color: chartreuse;
+    font-weight: bold;
+    border-radius: 5px ;
+}
+
+#btn
+{
+    width: 50%;
+    height: 40px;
+    background-color: rgb(216, 75, 216);
+    border-radius: 8px;
+}
+
+.text
+{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.Content {
+    display: flex;
+    margin: 30px;
+}
+
+.flexBox {
+    flex-grow: 1;
+}
+
+.readOnly {
+    padding-top: 100px;
+    color: rgb(101, 177, 25);
+}

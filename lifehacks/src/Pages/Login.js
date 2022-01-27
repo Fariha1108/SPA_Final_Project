@@ -1,15 +1,19 @@
 import React, { useContext } from 'react';
-import { FavHacks } from '.';
-
-//import { PageContext } from '../PageContext';
+import { PageContext } from '../PageContext';
+import { Button } from 'semantic-ui-react'
 
 export const Login = () => {
 
-    //const [isLoggedIn, setIsLoggedIn] = useContext(PageContext);
+    const { isLoggedIn, setIsLoggedIn } = useContext(PageContext);
 
     return (
         <div>
-            Loge dich ein
+            {
+                isLoggedIn ?
+                    <Button color='violet' onClick={() => setIsLoggedIn(false)}>Logout</Button>
+                    :
+                    <Button color='purple' onClick={() => setIsLoggedIn(true)}>Login</Button>
+            }
         </div>
     );
 };
